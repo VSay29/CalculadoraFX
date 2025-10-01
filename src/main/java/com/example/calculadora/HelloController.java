@@ -28,13 +28,11 @@ public class HelloController {
     @FXML
     public void calcular(ActionEvent actionEvent) {
         double num1 = 0.0, num2 = 0.0;
-        if(!txtNum1.getText().isEmpty() && !txtNum2.getText().isEmpty()) {
-            num1 = Double.parseDouble(txtNum1.getText());
-            num2 = Double.parseDouble(txtNum2.getText());
-            if(cmbBoxOperation.getValue().equals("+")) txtResult.setText(String.valueOf(num1 + num2));
-            if(cmbBoxOperation.getValue().equals("-")) txtResult.setText(String.valueOf(num1 - num2));
-            if(cmbBoxOperation.getValue().equals("*")) txtResult.setText(String.valueOf(num1 * num2));
-            if(cmbBoxOperation.getValue().equals("/")) txtResult.setText(String.valueOf(num1 / num2));
-        } else txtResult.setText("Se necesitan 2 valores para poder operar");
+        if(!txtNum1.getText().isEmpty()) num1 = Double.parseDouble(txtNum1.getText());
+        if(!txtNum2.getText().isEmpty()) num2 = Double.parseDouble(txtNum2.getText());
+        if(cmbBoxOperation.getValue().equals("+")) txtResult.setText(String.valueOf(num1 + num2));
+        if(cmbBoxOperation.getValue().equals("-")) txtResult.setText(String.valueOf(num1 - num2));
+        if(cmbBoxOperation.getValue().equals("*")) txtResult.setText(String.valueOf(num1 * num2));
+        if(cmbBoxOperation.getValue().equals("/")) txtResult.setText(String.valueOf(num1 / num2));
     }
 }
