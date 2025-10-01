@@ -12,11 +12,11 @@
       <Label layoutX="115.0" layoutY="140.0" text="1st number:" />
       <Label layoutX="115.0" layoutY="174.0" text="Choose operation:" />
       <Label layoutX="115.0" layoutY="212.0" text="2nd number:" />
-      <Label layoutX="115.0" layoutY="281.0" text="Result:" />
-      <Button fx:id="btnGo" layoutX="196.0" layoutY="244.0" mnemonicParsing="false" text="Go" />
+      <Label layoutX="82.0" layoutY="282.0" text="Result:" />
+      <Button fx:id="btnGo" layoutX="196.0" layoutY="244.0" mnemonicParsing="false" onAction="#calcular" text="Go" />
       <ComboBox fx:id="cmbBoxOperation" layoutX="227.0" layoutY="170.0" prefHeight="25.0" prefWidth="68.0" />
       <TextField fx:id="txtNum1" layoutX="187.0" layoutY="136.0" />
       <TextField fx:id="txtNum2" layoutX="196.0" layoutY="208.0" />
-      <TextField fx:id="txtResult" layoutX="164.0" layoutY="277.0" />
+      <TextField fx:id="txtResult" layoutX="131.0" layoutY="278.0" prefHeight="25.0" prefWidth="254.0" />
    </children>
 </Pane>
